@@ -1,0 +1,32 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  title: string;
+  activePage?: string;
+}
+
+const { title, activePage } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} | SES</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,500&family=Geist+Mono:wght@700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <Navbar activePage={activePage} />
+    <main class="flex flex-1 flex-col">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

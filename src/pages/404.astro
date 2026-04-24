@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Page Not Found">
+  <section class="flex flex-1 flex-col items-center justify-center gap-6 bg-[#F5F3EE] px-20 py-32">
+    <span class="font-mono text-[96px] font-bold leading-none text-[#4A8C5E]">404</span>
+
+    <div class="h-px w-16 bg-[#4A8C5E] opacity-40"></div>
+
+    <div class="flex flex-col items-center gap-3 text-center">
+      <h1 class="font-serif text-[36px] font-bold text-[#1B3A28]">Page Not Found</h1>
+      <p class="max-w-[420px] text-[16px] leading-[1.7] text-[#7A9A80]">
+        This page doesn't exist yet — or may be coming soon. Head back home to explore our programs and mission.
+      </p>
+    </div>
+
+    <a
+      href="/"
+      class="flex items-center gap-2.5 rounded-full px-9 py-4 text-[15px] font-semibold text-white"
+      style="background: linear-gradient(180deg, #4A8C5E 0%, #2D5E3A 100%);"
+    >
+      Back to Homepage
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14"/>
+        <path d="m12 5 7 7-7 7"/>
+      </svg>
+    </a>
+  </section>
+</Layout>

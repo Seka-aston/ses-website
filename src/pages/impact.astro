@@ -1,0 +1,226 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Impact" activePage="Impact">
+  <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+  <section class="flex h-[480px] flex-col items-center justify-center gap-5 bg-[#1B3A28] px-20">
+    <!-- Badge -->
+    <div class="flex items-center gap-2 rounded-full bg-[#2D5E3A] px-4 py-1.5">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A8CCAF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="20" x2="18" y2="10"/>
+        <line x1="12" y1="20" x2="12" y2="4"/>
+        <line x1="6" y1="20" x2="6" y2="14"/>
+      </svg>
+      <span class="text-[13px] font-semibold text-[#A8CCAF]">Measuring What Matters</span>
+    </div>
+
+    <!-- Headline -->
+    <h1 class="max-w-[900px] text-center font-serif text-[52px] font-bold leading-tight text-white">
+      Our Commitment to the UN Sustainable Development Goals
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="max-w-[680px] text-center text-[17px] leading-[1.6] text-[#7A9A80]">
+      Every program we run is tied to measurable outcomes that advance the global goals for people and planet.
+    </p>
+  </section>
+
+  <!-- ── SDG Focus Grid ────────────────────────────────────────────────── -->
+  <section class="flex flex-col items-center gap-8 bg-[#F5F3EE] px-20 py-20">
+    <!-- Header -->
+    <div class="flex flex-col items-center gap-3 text-center">
+      <span class="text-[13px] font-semibold tracking-[2px] text-[#4A8C5E]">OUR SDG ALIGNMENT</span>
+      <h2 class="font-serif text-[40px] font-bold text-[#1B3A28]">Four Goals, One Mission</h2>
+    </div>
+
+    <!-- 2×2 Grid -->
+    <div class="grid w-full grid-cols-2 gap-6">
+      <!-- SDG 7 -->
+      <div class="flex items-start gap-6 rounded-xl border border-[#D6DDD0] bg-white p-8">
+        <div class="flex h-[72px] w-[72px] shrink-0 items-center justify-center rounded-[16px] bg-[#FCC30B]">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <div class="flex flex-col gap-2">
+          <span class="font-mono text-[13px] font-bold text-[#FCC30B]">SDG 7</span>
+          <h3 class="text-[20px] font-semibold text-[#1B3A28]">Affordable &amp; Clean Energy</h3>
+          <p class="text-[15px] leading-[1.7] text-[#7A9A80]">
+            We expand access to affordable, reliable, sustainable, and modern energy for all through solar and biomass solutions.
+          </p>
+        </div>
+      </div>
+
+      <!-- SDG 13 -->
+      <div class="flex items-start gap-6 rounded-xl border border-[#D6DDD0] bg-white p-8">
+        <div class="flex h-[72px] w-[72px] shrink-0 items-center justify-center rounded-[16px] bg-[#3F7E44]">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v2"/>
+            <path d="m4.93 4.93 1.41 1.41"/>
+            <path d="M20 12h2"/>
+            <path d="m19.07 4.93-1.41 1.41"/>
+            <path d="M15.947 12.65a4 4 0 0 0-5.925-4.128"/>
+            <path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6z"/>
+          </svg>
+        </div>
+        <div class="flex flex-col gap-2">
+          <span class="font-mono text-[13px] font-bold text-[#3F7E44]">SDG 13</span>
+          <h3 class="text-[20px] font-semibold text-[#1B3A28]">Climate Action</h3>
+          <p class="text-[15px] leading-[1.7] text-[#7A9A80]">
+            Our conservation, reforestation, and emissions-reduction programs build resilience to climate change and its impacts.
+          </p>
+        </div>
+      </div>
+
+      <!-- SDG 2 -->
+      <div class="flex items-start gap-6 rounded-xl border border-[#D6DDD0] bg-white p-8">
+        <div class="flex h-[72px] w-[72px] shrink-0 items-center justify-center rounded-[16px] bg-[#DDA63A]">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 22 16 8"/>
+            <path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94z"/>
+            <path d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94z"/>
+            <path d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94z"/>
+            <path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4z"/>
+            <path d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0z"/>
+          </svg>
+        </div>
+        <div class="flex flex-col gap-2">
+          <span class="font-mono text-[13px] font-bold text-[#DDA63A]">SDG 2</span>
+          <h3 class="text-[20px] font-semibold text-[#1B3A28]">Zero Hunger</h3>
+          <p class="text-[15px] leading-[1.7] text-[#7A9A80]">
+            Our agri-processing programs support sustainable agriculture and end hunger in food-insecure communities.
+          </p>
+        </div>
+      </div>
+
+      <!-- SDG 4 -->
+      <div class="flex items-start gap-6 rounded-xl border border-[#D6DDD0] bg-white p-8">
+        <div class="flex h-[72px] w-[72px] shrink-0 items-center justify-center rounded-[16px] bg-[#C5192D]">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          </svg>
+        </div>
+        <div class="flex flex-col gap-2">
+          <span class="font-mono text-[13px] font-bold text-[#C5192D]">SDG 4</span>
+          <h3 class="text-[20px] font-semibold text-[#1B3A28]">Quality Education</h3>
+          <p class="text-[15px] leading-[1.7] text-[#7A9A80]">
+            We build schools, train teachers, and integrate environmental literacy into curricula for lasting generational impact.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Statistics Strip ──────────────────────────────────────────────── -->
+  <section class="flex items-center justify-center bg-[#1B3A28] px-20 py-14">
+    <div class="flex w-full items-center">
+      <!-- Stat 1 -->
+      <div class="flex flex-1 flex-col items-center gap-2">
+        <span class="font-serif text-[56px] font-bold text-[#4A8C5E]">12+</span>
+        <span class="text-[15px] font-medium text-[#7A9A80]">Countries Reached</span>
+      </div>
+
+      <div class="h-16 w-px bg-[#2D5E3A]"></div>
+
+      <!-- Stat 2 -->
+      <div class="flex flex-1 flex-col items-center gap-2">
+        <span class="font-serif text-[56px] font-bold text-[#4A8C5E]">4</span>
+        <span class="text-[15px] font-medium text-[#7A9A80]">Core Programs</span>
+      </div>
+
+      <div class="h-16 w-px bg-[#2D5E3A]"></div>
+
+      <!-- Stat 3 -->
+      <div class="flex flex-1 flex-col items-center gap-2">
+        <span class="font-serif text-[56px] font-bold text-[#4A8C5E]">5,000+</span>
+        <span class="text-[15px] font-medium text-[#7A9A80]">Lives Impacted</span>
+      </div>
+
+      <div class="h-16 w-px bg-[#2D5E3A]"></div>
+
+      <!-- Stat 4 -->
+      <div class="flex flex-1 flex-col items-center gap-2">
+        <span class="font-serif text-[56px] font-bold text-[#4A8C5E]">98%</span>
+        <span class="text-[15px] font-medium text-[#7A9A80]">Project Success Rate</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Quote Block ───────────────────────────────────────────────────── -->
+  <section class="flex flex-col items-center gap-8 border border-[#D6DDD0] bg-white px-40 py-20">
+    <!-- Quote icon -->
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="#A8CCAF" stroke="none">
+      <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/>
+      <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>
+    </svg>
+
+    <!-- Quote text -->
+    <p class="max-w-[780px] text-center font-serif text-[28px] font-medium italic leading-[1.6] text-[#1B3A28]">
+      Sustainability isn't just a goal — it's a way of being. Every community we serve becomes a guardian of the future, and that is impact that lasts far beyond any single project.
+    </p>
+
+    <!-- Attribution -->
+    <div class="flex flex-col items-center gap-1">
+      <span class="text-[16px] font-semibold text-[#1B3A28]">Dr. Amara Osei</span>
+      <span class="text-[14px] text-[#4A8C5E]">Executive Director</span>
+    </div>
+  </section>
+
+  <!-- ── Key Milestones ────────────────────────────────────────────────── -->
+  <section class="flex flex-col items-center gap-12 bg-[#F5F3EE] px-20 py-20">
+    <!-- Header -->
+    <div class="flex flex-col items-center gap-3 text-center">
+      <span class="text-[13px] font-semibold tracking-[2px] text-[#4A8C5E]">OUR JOURNEY</span>
+      <h2 class="font-serif text-[40px] font-bold text-[#1B3A28]">Key Milestones</h2>
+    </div>
+
+    <!-- Cards -->
+    <div class="flex w-full gap-6">
+      <!-- 2018 -->
+      <div class="flex flex-1 flex-col gap-4 rounded-xl border border-[#D6DDD0] bg-white p-7">
+        <div class="flex items-center justify-center self-start rounded-full bg-[#2D5E3A] px-4 py-1.5">
+          <span class="font-mono text-[13px] font-bold text-[#A8CCAF]">2018</span>
+        </div>
+        <h3 class="text-[18px] font-semibold text-[#1B3A28]">Organization Founded</h3>
+        <p class="text-[14px] leading-[1.7] text-[#7A9A80]">
+          SustainEnviro Solutions was established with a founding team of five environmental scientists and community organizers.
+        </p>
+      </div>
+
+      <!-- 2020 -->
+      <div class="flex flex-1 flex-col gap-4 rounded-xl border border-[#D6DDD0] bg-white p-7">
+        <div class="flex items-center justify-center self-start rounded-full bg-[#2D5E3A] px-4 py-1.5">
+          <span class="font-mono text-[13px] font-bold text-[#A8CCAF]">2020</span>
+        </div>
+        <h3 class="text-[18px] font-semibold text-[#1B3A28]">First Solar Project</h3>
+        <p class="text-[14px] leading-[1.7] text-[#7A9A80]">
+          Launched our flagship rural electrification project, bringing clean solar energy to 500 households across three villages.
+        </p>
+      </div>
+
+      <!-- 2023 -->
+      <div class="flex flex-1 flex-col gap-4 rounded-xl border border-[#D6DDD0] bg-white p-7">
+        <div class="flex items-center justify-center self-start rounded-full bg-[#2D5E3A] px-4 py-1.5">
+          <span class="font-mono text-[13px] font-bold text-[#A8CCAF]">2023</span>
+        </div>
+        <h3 class="text-[18px] font-semibold text-[#1B3A28]">Cross-Border Expansion</h3>
+        <p class="text-[14px] leading-[1.7] text-[#7A9A80]">
+          Expanded operations into 12 countries, partnering with local NGOs and government agencies to scale our programs regionally.
+        </p>
+      </div>
+
+      <!-- 2026 -->
+      <div class="flex flex-1 flex-col gap-4 rounded-xl border border-[#D6DDD0] bg-white p-7">
+        <div class="flex items-center justify-center self-start rounded-full bg-[#2D5E3A] px-4 py-1.5">
+          <span class="font-mono text-[13px] font-bold text-[#A8CCAF]">2026</span>
+        </div>
+        <h3 class="text-[18px] font-semibold text-[#1B3A28]">10,000 Lives Target</h3>
+        <p class="text-[14px] leading-[1.7] text-[#7A9A80]">
+          On track to reach 10,000 direct beneficiaries through expanded renewable energy, education, and agri-processing initiatives.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>
