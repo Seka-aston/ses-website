@@ -12,12 +12,13 @@ const navLinks = [
 ];
 ---
 
-<nav class="flex items-center justify-between bg-[#1C4539] px-20 py-5">
+<nav class="flex items-center justify-between bg-[#1C4539] px-6 py-4 md:px-20 md:py-5">
   <a href="/">
     <img src="/logo.svg" alt="SustainEnviro Solutions" class="h-[52px] w-auto" />
   </a>
 
-  <div class="flex items-center gap-8">
+  <!-- Desktop nav -->
+  <div class="hidden items-center gap-8 md:flex">
     {navLinks.map((link) => (
       <a
         href={link.href}
@@ -30,4 +31,50 @@ const navLinks = [
       Donate
     </a>
   </div>
+
+  <!-- Hamburger button (mobile only) -->
+  <button
+    id="menu-toggle"
+    class="flex flex-col justify-center gap-[5px] p-2 md:hidden"
+    aria-label="Toggle navigation menu"
+  >
+    <span class="block h-[2px] w-6 bg-white"></span>
+    <span class="block h-[2px] w-6 bg-white"></span>
+    <span class="block h-[2px] w-6 bg-white"></span>
+  </button>
 </nav>
+
+<!-- Mobile menu -->
+<div id="mobile-menu" class="hidden border-t border-[#4e6549] bg-[#1C4539] px-6 pb-6 md:hidden">
+  <div class="flex flex-col pt-2">
+    {navLinks.map((link) => (
+      <a
+        href={link.href}
+        class={`border-b border-[#4e6549] py-3.5 text-[15px] ${activePage === link.label ? 'font-semibold text-[#B9F0AE]' : 'font-medium text-white'}`}
+      >
+        {link.label}
+      </a>
+    ))}
+    <a
+      href="/donate"
+      class="mt-5 flex items-center justify-center rounded-full bg-[#B9F0AE] py-3 text-sm font-semibold text-[#1C4539]"
+    >
+      Donate
+    </a>
+  </div>
+</div>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+
+  toggle?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+
+  menu?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      menu?.classList.add('hidden');
+    });
+  });
+</script>

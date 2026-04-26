@@ -7,15 +7,15 @@ const heroImage =
 
 <Layout title="About" activePage="About">
   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
-  <section class="flex h-[520px] bg-[#1C4539]">
-    <div class="flex flex-1 flex-col justify-center gap-6 px-16 py-20">
+  <section class="flex flex-col bg-[#1C4539] md:h-[520px] md:flex-row">
+    <div class="flex flex-1 flex-col justify-center gap-6 px-6 py-12 md:px-16 md:py-20">
       <div class="flex w-fit items-center gap-2 rounded-full bg-[#4e6549] px-4 py-1.5">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#B9F0AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
         </svg>
         <span class="text-[12px] font-semibold text-[#B9F0AE]">About SES</span>
       </div>
-      <h1 class="font-serif text-[44px] font-bold leading-[1.2] text-white">
+      <h1 class="font-serif text-[28px] font-bold leading-[1.2] text-white md:text-[36px] lg:text-[44px]">
         We Believe in a World Where People and Planet Thrive Together
       </h1>
       <p class="text-base leading-[1.7] text-[#B9F0AE]">
@@ -23,18 +23,18 @@ const heroImage =
       </p>
     </div>
     <div
-      class="flex-1"
+      class="h-[260px] md:h-auto md:flex-1"
       style={`background-image: url('${heroImage}'); background-size: cover; background-position: center;`}
     ></div>
   </section>
 
   <!-- ── Mission / Vision / Values ─────────────────────────────────── -->
-  <section class="flex flex-col items-center gap-12 bg-[#dff8da] px-20 py-20">
+  <section class="flex flex-col items-center gap-10 bg-[#dff8da] px-6 py-12 md:gap-12 md:px-20 md:py-20">
     <div class="flex flex-col items-center gap-3 text-center">
       <span class="text-[13px] font-semibold tracking-[2px] text-[#668460]">WHO WE ARE</span>
-      <h2 class="font-serif text-[40px] font-bold text-[#1C4539]">Guided by Purpose, Driven by Impact</h2>
+      <h2 class="font-serif text-[28px] font-bold text-[#1C4539] md:text-[40px]">Guided by Purpose, Driven by Impact</h2>
     </div>
-    <div class="flex w-full gap-8">
+    <div class="flex w-full flex-col gap-6 md:flex-row md:gap-8">
       <div class="flex flex-1 flex-col gap-5 rounded-xl border border-[#c7f3be] bg-white p-8 shadow-[0_4px_20px_rgba(28,69,57,0.05)]">
         <div class="flex h-14 w-14 items-center justify-center rounded-[16px]" style="background: linear-gradient(180deg, #c7f3be 0%, #dff8da 100%);">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1C4539" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -42,9 +42,7 @@ const heroImage =
           </svg>
         </div>
         <h3 class="font-serif text-[24px] font-bold text-[#1C4539]">Our Mission</h3>
-        <p class="text-[15px] leading-[1.7] text-[#4e6549]">
-          To advance environmental sustainability through innovative programs that protect ecosystems, empower communities, and create lasting change across Africa and beyond.
-        </p>
+        <p class="text-[15px] leading-[1.7] text-[#4e6549]">To advance environmental sustainability through innovative programs that protect ecosystems, empower communities, and create lasting change across Africa and beyond.</p>
       </div>
       <div class="flex flex-1 flex-col gap-5 rounded-xl border border-[#c7f3be] bg-white p-8 shadow-[0_4px_20px_rgba(28,69,57,0.05)]">
         <div class="flex h-14 w-14 items-center justify-center rounded-[16px]" style="background: linear-gradient(180deg, #c7f3be 0%, #dff8da 100%);">
@@ -53,9 +51,7 @@ const heroImage =
           </svg>
         </div>
         <h3 class="font-serif text-[24px] font-bold text-[#1C4539]">Our Vision</h3>
-        <p class="text-[15px] leading-[1.7] text-[#4e6549]">
-          A world where every community has access to clean energy, healthy ecosystems, sustainable food systems, and quality education that nurtures environmental stewardship.
-        </p>
+        <p class="text-[15px] leading-[1.7] text-[#4e6549]">A world where every community has access to clean energy, healthy ecosystems, sustainable food systems, and quality education that nurtures environmental stewardship.</p>
       </div>
       <div class="flex flex-1 flex-col gap-5 rounded-xl border border-[#c7f3be] bg-white p-8 shadow-[0_4px_20px_rgba(28,69,57,0.05)]">
         <div class="flex h-14 w-14 items-center justify-center rounded-[16px]" style="background: linear-gradient(180deg, #c7f3be 0%, #dff8da 100%);">
@@ -64,24 +60,20 @@ const heroImage =
           </svg>
         </div>
         <h3 class="font-serif text-[24px] font-bold text-[#1C4539]">Our Values</h3>
-        <p class="text-[15px] leading-[1.7] text-[#4e6549]">
-          Integrity, collaboration, and innovation guide everything we do. We believe in transparency, community ownership, and science-driven solutions for a sustainable planet.
-        </p>
+        <p class="text-[15px] leading-[1.7] text-[#4e6549]">Integrity, collaboration, and innovation guide everything we do. We believe in transparency, community ownership, and science-driven solutions for a sustainable planet.</p>
       </div>
     </div>
   </section>
 
   <!-- ── SDG Focus ──────────────────────────────────────────────────── -->
-  <section class="flex flex-col items-center gap-12 bg-white px-20 py-20">
+  <section class="flex flex-col items-center gap-10 bg-white px-6 py-12 md:gap-12 md:px-20 md:py-20">
     <div class="flex flex-col items-center gap-3 text-center">
       <span class="text-[13px] font-semibold tracking-[2px] text-[#668460]">OUR SDG FOCUS</span>
-      <h2 class="font-serif text-[40px] font-bold text-[#1C4539]">Aligned With Global Goals</h2>
-      <p class="max-w-[520px] text-base text-[#4e6549]">
-        Our programs directly support four United Nations Sustainable Development Goals.
-      </p>
+      <h2 class="font-serif text-[28px] font-bold text-[#1C4539] md:text-[40px]">Aligned With Global Goals</h2>
+      <p class="max-w-[520px] text-base text-[#4e6549]">Our programs directly support four United Nations Sustainable Development Goals.</p>
     </div>
-    <div class="flex w-full gap-6">
-      <div class="flex flex-1 flex-col items-center gap-4 rounded-xl bg-[#dff8da] p-7 shadow-[0_4px_20px_rgba(28,69,57,0.05)]">
+    <div class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+      <div class="flex flex-col items-center gap-4 rounded-xl bg-[#dff8da] p-7 shadow-[0_4px_20px_rgba(28,69,57,0.05)]">
         <div class="flex h-16 w-16 items-center justify-center rounded-[16px] bg-[#FCC30B]">
           <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
         </div>
@@ -89,7 +81,7 @@ const heroImage =
         <h3 class="text-center text-[17px] font-semibold text-[#1C4539]">Affordable &amp; Clean Energy</h3>
         <p class="text-center text-sm leading-[1.6] text-[#4e6549]">Expanding access to renewable energy sources in underserved communities across the region.</p>
       </div>
-      <div class="flex flex-1 flex-col items-center gap-4 rounded-xl bg-[#dff8da] p-7 shadow-[0_4px_20px_rgba(28,69,57,0.05)]">
+      <div class="flex flex-col items-center gap-4 rounded-xl bg-[#dff8da] p-7 shadow-[0_4px_20px_rgba(28,69,57,0.05)]">
         <div class="flex h-16 w-16 items-center justify-center rounded-[16px] bg-[#3F7E44]">
           <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 2v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="M20 12h2"/><path d="m19.07 4.93-1.41 1.41"/>
@@ -100,7 +92,7 @@ const heroImage =
         <h3 class="text-center text-[17px] font-semibold text-[#1C4539]">Climate Action</h3>
         <p class="text-center text-sm leading-[1.6] text-[#4e6549]">Driving climate resilience through conservation, reforestation, and emissions reduction programs.</p>
       </div>
-      <div class="flex flex-1 flex-col items-center gap-4 rounded-xl bg-[#dff8da] p-7 shadow-[0_4px_20px_rgba(28,69,57,0.05)]">
+      <div class="flex flex-col items-center gap-4 rounded-xl bg-[#dff8da] p-7 shadow-[0_4px_20px_rgba(28,69,57,0.05)]">
         <div class="flex h-16 w-16 items-center justify-center rounded-[16px] bg-[#DDA63A]">
           <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M2 22 16 8"/><path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94z"/>
@@ -114,7 +106,7 @@ const heroImage =
         <h3 class="text-center text-[17px] font-semibold text-[#1C4539]">Zero Hunger</h3>
         <p class="text-center text-sm leading-[1.6] text-[#4e6549]">Supporting sustainable agriculture and food processing to eliminate hunger in vulnerable populations.</p>
       </div>
-      <div class="flex flex-1 flex-col items-center gap-4 rounded-xl bg-[#dff8da] p-7 shadow-[0_4px_20px_rgba(28,69,57,0.05)]">
+      <div class="flex flex-col items-center gap-4 rounded-xl bg-[#dff8da] p-7 shadow-[0_4px_20px_rgba(28,69,57,0.05)]">
         <div class="flex h-16 w-16 items-center justify-center rounded-[16px] bg-[#C5192D]">
           <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
@@ -128,32 +120,32 @@ const heroImage =
   </section>
 
   <!-- ── Team ───────────────────────────────────────────────────────── -->
-  <section class="flex flex-col items-center gap-12 bg-[#dff8da] px-20 py-20">
+  <section class="flex flex-col items-center gap-10 bg-[#dff8da] px-6 py-12 md:gap-12 md:px-20 md:py-20">
     <div class="flex flex-col items-center gap-3 text-center">
       <span class="text-[13px] font-semibold tracking-[2px] text-[#668460]">LEADERSHIP</span>
-      <h2 class="font-serif text-[40px] font-bold text-[#1C4539]">Meet the Team Behind the Mission</h2>
+      <h2 class="font-serif text-[28px] font-bold text-[#1C4539] md:text-[40px]">Meet the Team Behind the Mission</h2>
       <p class="text-base text-[#4e6549]">Passionate leaders driving sustainability forward every day.</p>
     </div>
-    <div class="flex justify-center gap-8">
-      <div class="flex w-[280px] flex-col items-center gap-4">
-        <img src="/tm1.png" alt="Dr. Amara Osei" class="h-[300px] w-[280px] rounded-xl object-cover" />
-        <p class="text-[17px] font-semibold text-[#1C4539]">Dr. Amara Osei</p>
-        <p class="text-sm text-[#668460]">Executive Director</p>
+    <div class="grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8">
+      <div class="flex flex-col items-center gap-4">
+        <img src="/tm1.png" alt="Dr. Amara Osei" class="h-[220px] w-full rounded-xl object-cover md:h-[300px] md:w-[280px]" />
+        <p class="text-center text-[15px] font-semibold text-[#1C4539] md:text-[17px]">Dr. Amara Osei</p>
+        <p class="text-center text-sm text-[#668460]">Executive Director</p>
       </div>
-      <div class="flex w-[280px] flex-col items-center gap-4">
-        <img src="/tm2.png" alt="James Kariuki" class="h-[300px] w-[280px] rounded-xl object-cover" />
-        <p class="text-[17px] font-semibold text-[#1C4539]">James Kariuki</p>
-        <p class="text-sm text-[#668460]">Head of Programs</p>
+      <div class="flex flex-col items-center gap-4">
+        <img src="/tm2.png" alt="James Kariuki" class="h-[220px] w-full rounded-xl object-cover md:h-[300px] md:w-[280px]" />
+        <p class="text-center text-[15px] font-semibold text-[#1C4539] md:text-[17px]">James Kariuki</p>
+        <p class="text-center text-sm text-[#668460]">Head of Programs</p>
       </div>
-      <div class="flex w-[280px] flex-col items-center gap-4">
-        <img src="/tm3.png" alt="Fatima Al-Hassan" class="h-[300px] w-[280px] rounded-xl object-cover" />
-        <p class="text-[17px] font-semibold text-[#1C4539]">Fatima Al-Hassan</p>
-        <p class="text-sm text-[#668460]">Director of Partnerships</p>
+      <div class="flex flex-col items-center gap-4">
+        <img src="/tm3.png" alt="Fatima Al-Hassan" class="h-[220px] w-full rounded-xl object-cover md:h-[300px] md:w-[280px]" />
+        <p class="text-center text-[15px] font-semibold text-[#1C4539] md:text-[17px]">Fatima Al-Hassan</p>
+        <p class="text-center text-sm text-[#668460]">Director of Partnerships</p>
       </div>
-      <div class="flex w-[280px] flex-col items-center gap-4">
-        <img src="/tm4.png" alt="Samuel Nkomo" class="h-[300px] w-[280px] rounded-xl object-cover" />
-        <p class="text-[17px] font-semibold text-[#1C4539]">Samuel Nkomo</p>
-        <p class="text-sm text-[#668460]">Chief of Research</p>
+      <div class="flex flex-col items-center gap-4">
+        <img src="/tm4.png" alt="Samuel Nkomo" class="h-[220px] w-full rounded-xl object-cover md:h-[300px] md:w-[280px]" />
+        <p class="text-center text-[15px] font-semibold text-[#1C4539] md:text-[17px]">Samuel Nkomo</p>
+        <p class="text-center text-sm text-[#668460]">Chief of Research</p>
       </div>
     </div>
   </section>

@@ -8,13 +8,12 @@ const heroImage =
 <Layout title="Home">
   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
   <section
-    class="relative flex h-[720px] items-center justify-center overflow-hidden px-20"
+    class="relative flex min-h-[480px] items-center justify-center overflow-hidden px-6 py-20 md:h-[720px] md:px-20 md:py-0"
     style={`background-image: url('${heroImage}'); background-size: cover; background-position: center;`}
   >
     <div class="absolute inset-0 bg-[#1C4539]/70"></div>
 
     <div class="relative z-10 flex flex-col items-center gap-7 text-center">
-      <!-- Badge -->
       <div class="flex items-center gap-2 rounded-full bg-[#4e6549] px-5 py-2">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B9F0AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="10"/>
@@ -24,20 +23,17 @@ const heroImage =
         <span class="text-[13px] font-medium text-[#B9F0AE]">Environmental Sustainability NGO</span>
       </div>
 
-      <!-- Headline -->
-      <h1 class="max-w-[900px] font-serif text-[64px] font-bold leading-tight text-white">
+      <h1 class="max-w-[900px] font-serif text-[38px] font-bold leading-tight text-white md:text-[52px] lg:text-[64px]">
         Sustainability, The Way to Go
       </h1>
 
-      <!-- Subtitle -->
-      <p class="max-w-[700px] text-[18px] leading-[1.6] text-[#B9F0AE]">
+      <p class="max-w-[700px] text-[15px] leading-[1.6] text-[#B9F0AE] md:text-[18px]">
         Protecting the next generation through impactful programs in renewable energy, environmental conservation, agricultural innovation, and quality education.
       </p>
 
-      <!-- CTA — button on dark background: #B9F0AE bg + #1C4539 text -->
       <a
         href="/get-involved"
-        class="flex items-center gap-2.5 rounded-full bg-[#B9F0AE] px-10 py-4 text-base font-semibold text-[#1C4539]"
+        class="flex items-center gap-2.5 rounded-full bg-[#B9F0AE] px-8 py-3.5 text-base font-semibold text-[#1C4539] md:px-10 md:py-4"
       >
         Get Involved
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -49,57 +45,39 @@ const heroImage =
   </section>
 
   <!-- ── Programs ──────────────────────────────────────────────────────── -->
-  <section class="flex flex-col items-center gap-12 bg-[#dff8da] px-20 py-20">
-    <!-- Header -->
+  <section class="flex flex-col items-center gap-10 bg-[#dff8da] px-6 py-12 md:gap-12 md:px-20 md:py-20">
     <div class="flex flex-col items-center gap-3 text-center">
       <span class="text-[13px] font-semibold tracking-[2px] text-[#668460]">OUR PROGRAMS</span>
-      <h2 class="font-serif text-[40px] font-bold text-[#1C4539]">Driving Change Across Four Pillars</h2>
+      <h2 class="font-serif text-[28px] font-bold text-[#1C4539] md:text-[40px]">Driving Change Across Four Pillars</h2>
       <p class="max-w-[560px] text-base leading-relaxed text-[#4e6549]">
         Each program is designed to create lasting impact in communities that need it most.
       </p>
     </div>
 
-    <!-- Cards -->
-    <div class="grid w-full grid-cols-4 gap-6">
-      <!-- Renewable Energy -->
+    <div class="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
       <div class="flex flex-col gap-4 rounded-xl border border-[#c7f3be] bg-white p-7 shadow-[0_4px_20px_rgba(28,69,57,0.05)]">
-        <div
-          class="flex h-[52px] w-[52px] items-center justify-center rounded-[14px]"
-          style="background: linear-gradient(180deg, #c7f3be 0%, #dff8da 100%);"
-        >
+        <div class="flex h-[52px] w-[52px] items-center justify-center rounded-[14px]" style="background: linear-gradient(180deg, #c7f3be 0%, #dff8da 100%);">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1C4539" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="4"/>
             <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
           </svg>
         </div>
         <h3 class="text-lg font-semibold text-[#1C4539]">Renewable Energy</h3>
-        <p class="text-sm leading-[1.6] text-[#4e6549]">
-          Deploying solar, wind, and biogas solutions to power communities sustainably and reduce carbon emissions.
-        </p>
+        <p class="text-sm leading-[1.6] text-[#4e6549]">Deploying solar, wind, and biogas solutions to power communities sustainably and reduce carbon emissions.</p>
       </div>
 
-      <!-- Environmental Protection -->
       <div class="flex flex-col gap-4 rounded-xl border border-[#c7f3be] bg-white p-7 shadow-[0_4px_20px_rgba(28,69,57,0.05)]">
-        <div
-          class="flex h-[52px] w-[52px] items-center justify-center rounded-[14px]"
-          style="background: linear-gradient(180deg, #c7f3be 0%, #dff8da 100%);"
-        >
+        <div class="flex h-[52px] w-[52px] items-center justify-center rounded-[14px]" style="background: linear-gradient(180deg, #c7f3be 0%, #dff8da 100%);">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1C4539" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
           </svg>
         </div>
         <h3 class="text-lg font-semibold text-[#1C4539]">Environmental Protection</h3>
-        <p class="text-sm leading-[1.6] text-[#4e6549]">
-          Preserving ecosystems, fighting pollution, and restoring biodiversity through grassroots conservation initiatives.
-        </p>
+        <p class="text-sm leading-[1.6] text-[#4e6549]">Preserving ecosystems, fighting pollution, and restoring biodiversity through grassroots conservation initiatives.</p>
       </div>
 
-      <!-- Agri-Processing -->
       <div class="flex flex-col gap-4 rounded-xl border border-[#c7f3be] bg-white p-7 shadow-[0_4px_20px_rgba(28,69,57,0.05)]">
-        <div
-          class="flex h-[52px] w-[52px] items-center justify-center rounded-[14px]"
-          style="background: linear-gradient(180deg, #c7f3be 0%, #dff8da 100%);"
-        >
+        <div class="flex h-[52px] w-[52px] items-center justify-center rounded-[14px]" style="background: linear-gradient(180deg, #c7f3be 0%, #dff8da 100%);">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1C4539" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M2 22 16 8"/>
             <path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94z"/>
@@ -110,36 +88,28 @@ const heroImage =
           </svg>
         </div>
         <h3 class="text-lg font-semibold text-[#1C4539]">Agri-Processing</h3>
-        <p class="text-sm leading-[1.6] text-[#4e6549]">
-          Empowering farmers with modern processing techniques, storage solutions, and access to sustainable markets.
-        </p>
+        <p class="text-sm leading-[1.6] text-[#4e6549]">Empowering farmers with modern processing techniques, storage solutions, and access to sustainable markets.</p>
       </div>
 
-      <!-- Quality Education -->
       <div class="flex flex-col gap-4 rounded-xl border border-[#c7f3be] bg-white p-7 shadow-[0_4px_20px_rgba(28,69,57,0.05)]">
-        <div
-          class="flex h-[52px] w-[52px] items-center justify-center rounded-[14px]"
-          style="background: linear-gradient(180deg, #c7f3be 0%, #dff8da 100%);"
-        >
+        <div class="flex h-[52px] w-[52px] items-center justify-center rounded-[14px]" style="background: linear-gradient(180deg, #c7f3be 0%, #dff8da 100%);">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1C4539" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
             <path d="M6 12v5c3 3 9 3 12 0v-5"/>
           </svg>
         </div>
         <h3 class="text-lg font-semibold text-[#1C4539]">Quality Education</h3>
-        <p class="text-sm leading-[1.6] text-[#4e6549]">
-          Building schools, training teachers, and creating curricula that integrate environmental literacy from day one.
-        </p>
+        <p class="text-sm leading-[1.6] text-[#4e6549]">Building schools, training teachers, and creating curricula that integrate environmental literacy from day one.</p>
       </div>
     </div>
   </section>
 
   <!-- ── SDG Strip ─────────────────────────────────────────────────────── -->
-  <section class="flex flex-col items-center gap-6 bg-white px-20 py-12">
+  <section class="flex flex-col items-center gap-6 bg-white px-6 py-10 md:px-20 md:py-12">
     <p class="text-[12px] font-semibold tracking-[2px] text-[#668460]">
       ALIGNED WITH THE UN SUSTAINABLE DEVELOPMENT GOALS
     </p>
-    <div class="flex items-center gap-3">
+    <div class="flex flex-wrap items-center justify-center gap-3">
       <div class="flex h-14 w-14 items-center justify-center rounded-lg bg-[#E5243B]">
         <span class="font-mono text-lg font-bold text-white">1</span>
       </div>
@@ -168,16 +138,15 @@ const heroImage =
   </section>
 
   <!-- ── Partner CTA ───────────────────────────────────────────────────── -->
-  <section class="flex flex-col items-center gap-6 bg-[#1C4539] px-20 py-20">
-    <h2 class="text-center font-serif text-[48px] font-bold text-white">Partner With Us</h2>
-    <p class="max-w-[640px] text-center text-[17px] leading-[1.6] text-[#B9F0AE]">
+  <section class="flex flex-col items-center gap-6 bg-[#1C4539] px-6 py-14 md:px-20 md:py-20">
+    <h2 class="text-center font-serif text-[32px] font-bold text-white md:text-[48px]">Partner With Us</h2>
+    <p class="max-w-[640px] text-center text-[16px] leading-[1.6] text-[#B9F0AE] md:text-[17px]">
       Together we can build a more sustainable future. Join our network of partners, donors, and changemakers making a real difference.
     </p>
-    <div class="flex items-center gap-4">
-      <!-- Button on dark bg: #B9F0AE bg + #1C4539 text -->
+    <div class="flex w-full flex-col items-center gap-4 sm:w-auto sm:flex-row">
       <a
         href="/partner"
-        class="flex items-center gap-2.5 rounded-full bg-[#B9F0AE] px-9 py-4 text-base font-semibold text-[#1C4539]"
+        class="flex w-full items-center justify-center gap-2.5 rounded-full bg-[#B9F0AE] px-9 py-4 text-base font-semibold text-[#1C4539] sm:w-auto"
       >
         Become a Partner
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -190,7 +159,7 @@ const heroImage =
       </a>
       <a
         href="/about"
-        class="flex items-center gap-2.5 rounded-full border border-white px-9 py-4 text-base font-medium text-white"
+        class="flex w-full items-center justify-center gap-2.5 rounded-full border border-white px-9 py-4 text-base font-medium text-white sm:w-auto"
       >
         Learn More
       </a>

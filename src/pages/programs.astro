@@ -11,23 +11,23 @@ const images = {
 
 <Layout title="Programs" activePage="Programs">
   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
-  <section class="flex h-[340px] flex-col items-center justify-center gap-4 bg-[#1C4539] px-20 py-14">
+  <section class="flex flex-col items-center justify-center gap-4 bg-[#1C4539] px-6 py-14 md:h-[340px] md:px-20">
     <span class="text-[13px] font-semibold tracking-[2px] text-[#B9F0AE]">OUR PROGRAMS</span>
-    <h1 class="font-serif text-[52px] font-bold text-white">What We Do</h1>
-    <p class="max-w-[580px] text-center text-[17px] text-[#B9F0AE]">
+    <h1 class="font-serif text-[32px] font-bold text-white md:text-[52px]">What We Do</h1>
+    <p class="max-w-[580px] text-center text-[15px] text-[#B9F0AE] md:text-[17px]">
       Four core programs addressing the most pressing sustainability challenges of our time.
     </p>
   </section>
 
   <!-- ── Program 1: Renewable Energy — image left, content right ──────── -->
-  <section class="flex items-center gap-12 bg-[#dff8da] px-20 py-12">
+  <section class="flex flex-col gap-8 bg-[#dff8da] px-6 py-10 md:flex-row md:items-center md:gap-12 md:px-20 md:py-12">
     <div
-      class="h-[400px] flex-1 rounded-xl shadow-[0_8px_28px_rgba(28,69,57,0.08)]"
+      class="h-[260px] w-full rounded-xl shadow-[0_8px_28px_rgba(28,69,57,0.08)] md:h-[400px] md:flex-1"
       style={`background-image: url('${images.p1}'); background-size: cover; background-position: center;`}
     ></div>
     <div class="flex flex-1 flex-col gap-5">
       <span class="font-mono text-[14px] font-bold text-[#668460]">01</span>
-      <h2 class="font-serif text-[36px] font-bold text-[#1C4539]">Renewable Energy</h2>
+      <h2 class="font-serif text-[28px] font-bold text-[#1C4539] md:text-[36px]">Renewable Energy</h2>
       <p class="text-[15px] leading-[1.7] text-[#4e6549]">
         We deploy clean energy solutions that power communities while protecting the environment. From rural electrification to industrial-scale projects, our energy programs reduce dependence on fossil fuels and create lasting economic opportunity.
       </p>
@@ -61,10 +61,10 @@ const images = {
   </section>
 
   <!-- ── Program 2: Environmental Protection — content left, image right ─ -->
-  <section class="flex items-center gap-12 bg-white px-20 py-12">
+  <section class="flex flex-col-reverse gap-8 bg-white px-6 py-10 md:flex-row md:items-center md:gap-12 md:px-20 md:py-12">
     <div class="flex flex-1 flex-col gap-5">
       <span class="font-mono text-[14px] font-bold text-[#668460]">02</span>
-      <h2 class="font-serif text-[36px] font-bold text-[#1C4539]">Environmental Protection</h2>
+      <h2 class="font-serif text-[28px] font-bold text-[#1C4539] md:text-[36px]">Environmental Protection</h2>
       <p class="text-[15px] leading-[1.7] text-[#4e6549]">
         Our environmental protection programs combine rigorous science with community engagement to safeguard ecosystems. We conduct comprehensive assessments and implement practical solutions that balance development with conservation.
       </p>
@@ -108,20 +108,20 @@ const images = {
       </a>
     </div>
     <div
-      class="h-[400px] flex-1 rounded-xl shadow-[0_8px_28px_rgba(28,69,57,0.08)]"
+      class="h-[260px] w-full rounded-xl shadow-[0_8px_28px_rgba(28,69,57,0.08)] md:h-[400px] md:flex-1"
       style={`background-image: url('${images.p2}'); background-size: cover; background-position: center;`}
     ></div>
   </section>
 
   <!-- ── Program 3: Agri-Processing — image left, content right ──────── -->
-  <section class="flex items-center gap-12 bg-[#dff8da] px-20 py-12">
+  <section class="flex flex-col gap-8 bg-[#dff8da] px-6 py-10 md:flex-row md:items-center md:gap-12 md:px-20 md:py-12">
     <div
-      class="h-[400px] flex-1 rounded-xl shadow-[0_8px_28px_rgba(28,69,57,0.08)]"
+      class="h-[260px] w-full rounded-xl shadow-[0_8px_28px_rgba(28,69,57,0.08)] md:h-[400px] md:flex-1"
       style={`background-image: url('${images.p3}'); background-size: cover; background-position: center;`}
     ></div>
     <div class="flex flex-1 flex-col gap-5">
       <span class="font-mono text-[14px] font-bold text-[#668460]">03</span>
-      <h2 class="font-serif text-[36px] font-bold text-[#1C4539]">Agri-Processing</h2>
+      <h2 class="font-serif text-[28px] font-bold text-[#1C4539] md:text-[36px]">Agri-Processing</h2>
       <p class="text-[15px] leading-[1.7] text-[#4e6549]">
         We help farming communities modernize their agricultural practices with sustainable processing techniques. Our programs connect smallholder farmers to better storage, processing, and market access — turning harvests into long-term livelihoods.
       </p>
@@ -155,10 +155,10 @@ const images = {
   </section>
 
   <!-- ── Program 4: Quality Education — content left, image right ─────── -->
-  <section class="flex items-center gap-12 bg-white px-20 py-12">
+  <section class="flex flex-col-reverse gap-8 bg-white px-6 py-10 md:flex-row md:items-center md:gap-12 md:px-20 md:py-12">
     <div class="flex flex-1 flex-col gap-5">
       <span class="font-mono text-[14px] font-bold text-[#668460]">04</span>
-      <h2 class="font-serif text-[36px] font-bold text-[#1C4539]">Quality Education</h2>
+      <h2 class="font-serif text-[28px] font-bold text-[#1C4539] md:text-[36px]">Quality Education</h2>
       <p class="text-[15px] leading-[1.7] text-[#4e6549]">
         Education is the foundation of lasting change. We build schools, train teachers, and integrate environmental literacy into curricula — empowering the next generation with the knowledge and values to protect our planet.
       </p>
@@ -190,7 +190,7 @@ const images = {
       </a>
     </div>
     <div
-      class="h-[400px] flex-1 rounded-xl shadow-[0_8px_28px_rgba(28,69,57,0.08)]"
+      class="h-[260px] w-full rounded-xl shadow-[0_8px_28px_rgba(28,69,57,0.08)] md:h-[400px] md:flex-1"
       style={`background-image: url('${images.p4}'); background-size: cover; background-position: center;`}
     ></div>
   </section>

@@ -4,29 +4,29 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Impact" activePage="Impact">
   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
-  <section class="flex h-[480px] flex-col items-center justify-center gap-5 bg-[#1C4539] px-20">
+  <section class="flex flex-col items-center justify-center gap-5 bg-[#1C4539] px-6 py-16 md:h-[480px] md:px-20">
     <div class="flex items-center gap-2 rounded-full bg-[#4e6549] px-4 py-1.5">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#B9F0AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
       </svg>
       <span class="text-[13px] font-semibold text-[#B9F0AE]">Measuring What Matters</span>
     </div>
-    <h1 class="max-w-[900px] text-center font-serif text-[52px] font-bold leading-tight text-white">
+    <h1 class="max-w-[900px] text-center font-serif text-[32px] font-bold leading-tight text-white md:text-[52px]">
       Our Commitment to the UN Sustainable Development Goals
     </h1>
-    <p class="max-w-[680px] text-center text-[17px] leading-[1.6] text-[#B9F0AE]">
+    <p class="max-w-[680px] text-center text-[15px] leading-[1.6] text-[#B9F0AE] md:text-[17px]">
       Every program we run is tied to measurable outcomes that advance the global goals for people and planet.
     </p>
   </section>
 
   <!-- ── SDG Focus Grid ────────────────────────────────────────────────── -->
-  <section class="flex flex-col items-center gap-8 bg-[#dff8da] px-20 py-20">
+  <section class="flex flex-col items-center gap-8 bg-[#dff8da] px-6 py-12 md:px-20 md:py-20">
     <div class="flex flex-col items-center gap-3 text-center">
       <span class="text-[13px] font-semibold tracking-[2px] text-[#668460]">OUR SDG ALIGNMENT</span>
-      <h2 class="font-serif text-[40px] font-bold text-[#1C4539]">Four Goals, One Mission</h2>
+      <h2 class="font-serif text-[28px] font-bold text-[#1C4539] md:text-[40px]">Four Goals, One Mission</h2>
     </div>
-    <div class="grid w-full grid-cols-2 gap-6">
-      <div class="flex items-start gap-6 rounded-xl border border-[#c7f3be] bg-white p-8">
+    <div class="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
+      <div class="flex flex-col gap-4 rounded-xl border border-[#c7f3be] bg-white p-6 sm:flex-row sm:items-start sm:gap-6 sm:p-8">
         <div class="flex h-[72px] w-[72px] shrink-0 items-center justify-center rounded-[16px] bg-[#FCC30B]">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
         </div>
@@ -36,7 +36,7 @@ import Layout from "../layouts/Layout.astro";
           <p class="text-[15px] leading-[1.7] text-[#4e6549]">We expand access to affordable, reliable, sustainable, and modern energy for all through solar and biomass solutions.</p>
         </div>
       </div>
-      <div class="flex items-start gap-6 rounded-xl border border-[#c7f3be] bg-white p-8">
+      <div class="flex flex-col gap-4 rounded-xl border border-[#c7f3be] bg-white p-6 sm:flex-row sm:items-start sm:gap-6 sm:p-8">
         <div class="flex h-[72px] w-[72px] shrink-0 items-center justify-center rounded-[16px] bg-[#3F7E44]">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 2v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="M20 12h2"/><path d="m19.07 4.93-1.41 1.41"/>
@@ -49,7 +49,7 @@ import Layout from "../layouts/Layout.astro";
           <p class="text-[15px] leading-[1.7] text-[#4e6549]">Our conservation, reforestation, and emissions-reduction programs build resilience to climate change and its impacts.</p>
         </div>
       </div>
-      <div class="flex items-start gap-6 rounded-xl border border-[#c7f3be] bg-white p-8">
+      <div class="flex flex-col gap-4 rounded-xl border border-[#c7f3be] bg-white p-6 sm:flex-row sm:items-start sm:gap-6 sm:p-8">
         <div class="flex h-[72px] w-[72px] shrink-0 items-center justify-center rounded-[16px] bg-[#DDA63A]">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M2 22 16 8"/><path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94z"/>
@@ -65,7 +65,7 @@ import Layout from "../layouts/Layout.astro";
           <p class="text-[15px] leading-[1.7] text-[#4e6549]">Our agri-processing programs support sustainable agriculture and end hunger in food-insecure communities.</p>
         </div>
       </div>
-      <div class="flex items-start gap-6 rounded-xl border border-[#c7f3be] bg-white p-8">
+      <div class="flex flex-col gap-4 rounded-xl border border-[#c7f3be] bg-white p-6 sm:flex-row sm:items-start sm:gap-6 sm:p-8">
         <div class="flex h-[72px] w-[72px] shrink-0 items-center justify-center rounded-[16px] bg-[#C5192D]">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
@@ -81,37 +81,37 @@ import Layout from "../layouts/Layout.astro";
   </section>
 
   <!-- ── Statistics Strip ──────────────────────────────────────────────── -->
-  <section class="flex items-center justify-center bg-[#1C4539] px-20 py-14">
-    <div class="flex w-full items-center">
+  <section class="flex items-center justify-center bg-[#1C4539] px-6 py-10 md:px-20 md:py-14">
+    <div class="grid w-full grid-cols-2 gap-y-8 md:flex md:items-center">
       <div class="flex flex-1 flex-col items-center gap-2">
-        <span class="font-serif text-[56px] font-bold text-[#B9F0AE]">12+</span>
-        <span class="text-[15px] font-medium text-white">Countries Reached</span>
+        <span class="font-serif text-[40px] font-bold text-[#B9F0AE] md:text-[56px]">12+</span>
+        <span class="text-[14px] font-medium text-white md:text-[15px]">Countries Reached</span>
       </div>
-      <div class="h-16 w-px bg-[#4e6549]"></div>
+      <div class="hidden h-16 w-px bg-[#4e6549] md:block"></div>
       <div class="flex flex-1 flex-col items-center gap-2">
-        <span class="font-serif text-[56px] font-bold text-[#B9F0AE]">4</span>
-        <span class="text-[15px] font-medium text-white">Core Programs</span>
+        <span class="font-serif text-[40px] font-bold text-[#B9F0AE] md:text-[56px]">4</span>
+        <span class="text-[14px] font-medium text-white md:text-[15px]">Core Programs</span>
       </div>
-      <div class="h-16 w-px bg-[#4e6549]"></div>
+      <div class="hidden h-16 w-px bg-[#4e6549] md:block"></div>
       <div class="flex flex-1 flex-col items-center gap-2">
-        <span class="font-serif text-[56px] font-bold text-[#B9F0AE]">5,000+</span>
-        <span class="text-[15px] font-medium text-white">Lives Impacted</span>
+        <span class="font-serif text-[40px] font-bold text-[#B9F0AE] md:text-[56px]">5,000+</span>
+        <span class="text-[14px] font-medium text-white md:text-[15px]">Lives Impacted</span>
       </div>
-      <div class="h-16 w-px bg-[#4e6549]"></div>
+      <div class="hidden h-16 w-px bg-[#4e6549] md:block"></div>
       <div class="flex flex-1 flex-col items-center gap-2">
-        <span class="font-serif text-[56px] font-bold text-[#B9F0AE]">98%</span>
-        <span class="text-[15px] font-medium text-white">Project Success Rate</span>
+        <span class="font-serif text-[40px] font-bold text-[#B9F0AE] md:text-[56px]">98%</span>
+        <span class="text-[14px] font-medium text-white md:text-[15px]">Project Success Rate</span>
       </div>
     </div>
   </section>
 
   <!-- ── Quote Block ───────────────────────────────────────────────────── -->
-  <section class="flex flex-col items-center gap-8 border border-[#c7f3be] bg-white px-40 py-20">
+  <section class="flex flex-col items-center gap-8 border border-[#c7f3be] bg-white px-6 py-12 md:px-20 md:py-20 lg:px-40">
     <svg width="40" height="40" viewBox="0 0 24 24" fill="#B9F0AE" stroke="none">
       <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/>
       <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>
     </svg>
-    <p class="max-w-[780px] text-center font-serif text-[28px] font-medium italic leading-[1.6] text-[#1C4539]">
+    <p class="max-w-[780px] text-center font-serif text-[20px] font-medium italic leading-[1.6] text-[#1C4539] md:text-[28px]">
       Sustainability isn't just a goal — it's a way of being. Every community we serve becomes a guardian of the future, and that is impact that lasts far beyond any single project.
     </p>
     <div class="flex flex-col items-center gap-1">
@@ -121,12 +121,12 @@ import Layout from "../layouts/Layout.astro";
   </section>
 
   <!-- ── Key Milestones ────────────────────────────────────────────────── -->
-  <section class="flex flex-col items-center gap-12 bg-[#dff8da] px-20 py-20">
+  <section class="flex flex-col items-center gap-12 bg-[#dff8da] px-6 py-12 md:px-20 md:py-20">
     <div class="flex flex-col items-center gap-3 text-center">
       <span class="text-[13px] font-semibold tracking-[2px] text-[#668460]">OUR JOURNEY</span>
-      <h2 class="font-serif text-[40px] font-bold text-[#1C4539]">Key Milestones</h2>
+      <h2 class="font-serif text-[28px] font-bold text-[#1C4539] md:text-[40px]">Key Milestones</h2>
     </div>
-    <div class="flex w-full gap-6">
+    <div class="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
       <div class="flex flex-1 flex-col gap-4 rounded-xl border border-[#c7f3be] bg-white p-7">
         <div class="flex items-center justify-center self-start rounded-full bg-[#1C4539] px-4 py-1.5">
           <span class="font-mono text-[13px] font-bold text-[#B9F0AE]">2018</span>
